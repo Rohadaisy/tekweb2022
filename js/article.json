@@ -1,0 +1,24 @@
+[
+  
+  {
+    "link":"artikel.md",
+    "title": "Skin Care",
+    "subtitle": "Sepenting apa sih skincare itu?",
+    "url":"../bahan/skin.jpg",
+    "desk": "Penggunaan skincare secara rutin akan memberikan banyak manfaat untuk kulit wajahmu. Karena jika kamu tidak menggunakan skincare, kulit wajahmu akan nampak seperti tidak terawat."
+  },
+  {
+    "link":"artikel2.md",
+    "title": "Kucing",
+    "subtitle": "Kucing sebagai hewan yang istimewa",
+    "url":"../bahan/kucing.jpg",
+    "desk": "Keistimewaan kucing dalam Islam dapat dilihat dari hadis Nabi dan peninggalan-peninggalan Islam. Dalam tradisi Islam, kucing dikagumi karena kebersihannya."
+  },
+  {
+    "link":"artikel3.md",
+    "title": "Web Developer",
+    "subtitle": "Apasih Web Developer itu?",
+    "url":"../bahan/web.jpg",
+    "desk": "avaScript adalah bahasa pemrograman tingkat tinggi dan dinamis. JavaScript populer di internet dan dapat bekerja di sebagian besar penjelajah web populer seperti Google Chrome,"
+  }
+]
