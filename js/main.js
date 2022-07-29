@@ -1,4 +1,3 @@
-const api = "https://myapi.rohadaisy.my.id/index.php/"
 Vue.createApp({
     data() {
       return {
@@ -82,50 +81,19 @@ Vue.createApp({
       };
     },
     methods: {
-        getUser() {
-          axios
-            .get(
-              api+"users"
-              )
-            .then((res) => {
-              console.log(res.data); //melihat respon data pada console browser
-              this.user = res.data; //memperbarui variabel header pada bagian data()
-            })
-            .catch((error) => {
-              console.log(error); //melihat error jika pengambilan data adalah gagal
-            });
-        },
-        getAbout() {
-          axios
-            .get(
-              api+"portofolio"
-              )
-            .then((res) => {
-              console.log(res.data); //melihat respon data pada console browser
-              this.aboutss = res.data; //memperbarui variabel header pada bagian data()
-            })
-            .catch((error) => {
-              console.log(error); //melihat error jika pengambilan data adalah gagal
-            });
-        },
-        getArtikel() {
-          axios
-            .get(
-              api+"artikel"
-              )
-            .then((res) => {
-              console.log(res.data); //melihat respon data pada console browser
-              this.artikelnya = res.data; //memperbarui variabel header pada bagian data()
-            })
-            .catch((error) => {
-              console.log(error); //melihat error jika pengambilan data adalah gagal
-            });
-        },
+      getHeaderData() {
+        axios
+          .get("https://raw.githubusercontent.com/faridsurya/Vue-Axios-Basic/master/contents/header.json")
+          .then((res) => {
+            console.log(res.data); //melihat respon data pada console browser
+            this.header = res.data; //memperbarui variabel header pada bagian data()
+          })
+          .catch((error) => {
+            console.log(error); //melihat error jika pengambilan data adalah gagal
+          });
+      },
     },
     beforeMount() {
-        this.getUser(); //eksekusi fungsi getHeaderData() pada bagian methods saat halaman terbuka
-        this.getAbout(); //eksekusi fungsi getHeaderData() pada bagian methods saat halaman terbuka
-        this.getArtikel(); //eksekusi fungsi getHeaderData() pada bagian methods saat halaman terbuka
-        this.ambiljudul();
-      },
+      this.getHeaderData(); //eksekusi fungsi getHeaderData() pada bagian methods saat halaman terbuka
+    },
   }).mount("#app");
